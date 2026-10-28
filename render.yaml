@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kaamwala-server
+    runtime: node
+    buildCommand: echo ok
+    startCommand: node server.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_CHAT_ID
+        sync: false
